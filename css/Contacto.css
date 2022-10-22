@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #777;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Roboto',sans-serif;
+    padding: 0 1.5em;
+}
+
+/*Caja general formando el ecabezado*/
+.encabezado{
+    width: 100%; /*Ancho total del Grid de encabezado*/
+    border-radius: 0%; 
+    margin: 0px;
+/*    position: fixed;*/
+/*    border: 1px solid #555;*/
+    height: fit-content;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap ;
+    align-items: center;
+}
+
+/* DIV en los que estan los botones del enbezado*/
+.boton 
+ {  
+    text-align: center;
+    min-width: 260px;
+    flex-grow: 1;
+    font-size: 1.5em;
+    /* background-color: red; Para ver el espacio del area boton */
+    /* width: fit-content; */
+    /* width: auto; */
+}
+
+/* Etiquetas a en los botones con los links a las demas páginas*/
+.boton a
+{   /*align-self: center; */
+    width: auto; 
+    text-decoration: none;  
+    color: #000; /*Negro color de "desanso" del boton  */
+    /*background-color: aqua; /*  Para ver el area del ancla a en boton*/
+}
+
+/* Etiqueta boton del menu pulldown*/
+.boton button
+{   align-self: center;
+    text-decoration: none;  
+    font-size:inherit; 
+    color: #000;
+    /* width: 100%; */
+    /* margin: auto; */
+}
+
+/*caja y boton del menu desplegable*/
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Contenido de la caja del menu con posición z>1 para estar por encima de la pagina. Normalmente oculo en posición absoluta debajo del la caja del boton con sombra*/
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+
+/* Style the links inside the dropdown */
+   .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .boton:hover, .boton button:hover, .boton a:hover
+  {   color: #FFF; 
+      background-color: #555;   
+  }
+  
+  
+  
+  .dropdown:hover,  .dropbtn 
+  {   color: #FFF; 
+      background-color: #555;   
+  }
+  
+  /* Muestra el menu desplegable */
+ .dropdown:hover .dropdown-content {
+    display: block;
+} 
+  
+  /* Agrega un fondo gris al marcar el nombre del catálogo. */
+  .dropdown-content a:hover 
+  {   background-color: #ddd;
+      color: black;
+  }
+ 
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.boton 
+ {  
+    text-align: center;
+    min-width: 260px;
+    flex-grow: 1;
+    font-size: 1.5em;
+}
+
+.boton img
+{
+    border-radius: 0%;
+    width: 40px;
+    align-self: center;
+}
+
+.logo {
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.home
+{
+ /*  display: inline-block;*/
+ font-size: 1.5em; 
+ width: 260PX;
+
+}
+
+.home span
+{   
+    font-family: 'Parisienne', cursive;
+    text-decoration: none; 
+    width: 250px;
+}
+
+div h1 { text-align: center;}
+
+.caja-contenido {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.caja-contenido > * {
+    padding: 1em;
+}
+
+.form-contacto {
+    /*background: #222222;*/
+    background-color: #777;
+
+}
+
+.form-contacto form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-contacto form label {
+    display: block;
+}
+
+.form-contacto form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.form-contacto form .bloque {
+    grid-column: 1 / 3;
+}
+
+.form-contacto form button,
+.form-contacto form input,
+.form-contacto form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.form-contacto form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.form-contacto form button:hover,
+.form-contacto form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.info-adicional {
+    background-color: #000;
+}
+
+.info-adicional h4, .info-adicional ul, .info-adicional p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .caja-contenido {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .caja-contenido > * {
+        padding: 2em;
+    }
+    .info-adicional h4,
+    .info-adicional ul,
+    .info-adicional p {
+        text-align: left;
+    }
+}

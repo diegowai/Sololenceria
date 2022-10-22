@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="img/logo sm red.ico">
+
+    <!-- GOOGLE FONTs -->
+<!--    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <link rel="stylesheet" href="css/Contacto.css">
+    <script src="js/main.js"></script>
+
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <div class="contenido">
+
+        <!-- Botonera del header con FLEX y FIXED POSITION dentro del Grid, use DIV por que no entendí como hacerlo con Listas :( -->
+        <div class="encabezado">
+            <div class="boton" > 
+              <div class="home">   
+                <a href="index.html">
+                  <img src="img/Logo xl red.png" alt=""> <span> SoloLenceria</span>
+                </a>
+              </div>
+            </div>
+            <div class="boton">
+              <a href="catalogo.html">Catalogo</a>
+            </div>
+            <div class="boton">
+                <a href="empresa.html">Empresa</a>
+              </div>  
+              <div class="boton">
+                <a href="contacto.html">Contacto</a>
+              </div>
+              
+            </div>
+
+        <div class="caja-contenido animated bounceInUp">
+
+            <div class="form-contacto">
+                <h3>Completá los siguientes datos</h3>
+                <form name="fcontacto" action="">
+                    <p>
+                        <label>Nombre completo</label>
+                        <input type="text" name="nombre">
+                    </p>
+                    <p>
+                        <label>Correo electrónico</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Teléfono</label>
+                        <input type="tel" name="telefono">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="asunto">
+                    </p>
+                    <p class="bloque">
+                       <label>Mensaje</label> 
+                        <textarea name="mensaje" rows="3"></textarea>
+                    </p>
+                    <p class="bloque">
+                        <button>
+                            <input type="button" id="b1" value="Enviar" onclick="validarEnviar()">
+                        </button>
+                    </p>
+                </form>
+            </div>
+
+            <div class="info-adicional">
+                <h4>Información Adicional</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Corrientes 4123 </li>
+                    <li><i class="fas fa-phone"></i> (5411) 4123-4567</li>
+                    <li><i class="fas fa-envelope-open-text"></i> info@sololenceria.com</li>
+                </ul>
+                <br><br>
+                <p>Para ver nuestro catálogo ingresá en: </p>
+                <a href="#Sololenceria.com"> Sololenceria.com</a>
+                <br><br>
+                <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0527299493256!2d-58.42710328159251!3d-34.602828111591954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca638a2d9dd7%3A0xa732c4187af4cbe4!2sAv.%20Corrientes%204123%2C%20C1195%20AAA%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1665267715332!5m2!1ses!2sar" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+                </div>
+              </div>
+        </div>
+
+    </div>
+    
+    <script>
+        // Esta función valida todos los campos del form.
+        // Si alguno no cumple con los requisitos, se aborta
+        // con return. Caso contrario, al final se realiza
+        // efectivamente el envio de los datos.
+
+        function validarEnviar() {
+
+            //valido el nombre
+            if (document.fcontacto.nombre.value.length  == 0) {
+                alert("Tiene que escribir su Nombre completo")
+                document.fcontacto.nombre.focus()
+                return 0
+            }
+
+            //valido el email
+            if (document.fcontacto.email.value.length  == 0) {
+                alert("Tiene que escribir su email")
+                document.fcontacto.email.focus()
+                return 0
+            }
+
+            //valido el telefono
+            
+            if (document.fcontacto.telefono.value.length  == 0) {
+                alert("Tiene que escribir su Telefono")
+                document.fcontacto.telefono.focus()
+                return 0
+            }
+
+            //valido el asunto
+            if (document.fcontacto.asunto.value.length  == 0) {
+                alert("Tiene que escribir el Asunto del email")
+                document.fcontacto.asunto.focus()
+                return 0
+            }
+
+            //valido el mensaje
+            if (document.fcontato.mensaje.value.length  == 0) {
+                alert("Tiene que escribir el Mensaje a enviar")
+                document.fcontacto.mensaje.focus()
+                return 0
+            }
+
+
+            //Finalmente, si llegó hasta aqui, se envia el form.
+            alert("Muchas gracias por enviar el formulario")
+            document.fcontacto.submit() 
+        }
+       
+    </script>
+
+</body>
+</html>

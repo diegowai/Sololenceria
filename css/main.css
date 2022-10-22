@@ -1,0 +1,351 @@
+/* Seteos genericos para toda la página */
+*{  margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {   
+    background-color: #222;
+    /* box-sizing: border-box;  */
+}
+
+/*----------------------------------------------------------------*/
+/* Imagen con bordes redondeados, con limites de tamaño           */
+/*----------------------------------------------------------------*/
+img {
+    border-radius: 30px;
+    width: 100%;
+    max-width:400px;
+}
+/*----------------------------------------------------------------*/
+/* Se define la apariencia de cada item del grid                  */
+/*----------------------------------------------------------------*/
+.item {
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+}
+/*----------------------------------------------------------------*/
+/*            DOCUMENTO PRINCIPAL                                 */
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*            ENCABEZADO                                          */
+/*----------------------------------------------------------------*/
+
+/*Caja general formando el ecabezado*/
+.encabezado{
+    width: 100%; /*Ancho total del Grid de encabezado*/
+    border-radius: 0%; 
+    margin: 0px;
+    position: fixed;
+    border: 1px solid #555;
+    height: fit-content;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap ;
+    align-items: center;
+}
+
+/* DIV en los que estan los botones del enbezado*/
+.boton 
+ {  
+    text-align: center;
+    min-width: 260px;
+    flex-grow: 1;
+    font-size: 1.5em;
+    /* background-color: red; Para ver el espacio del area boton */
+    /* width: fit-content; */
+    /* width: auto; */
+}
+
+/* Etiquetas a en los botones con los links a las demas páginas*/
+.boton a
+{   /*align-self: center; */
+    width: auto; 
+    text-decoration: none;  
+    color: #000; /*Negro color de "desanso" del boton  */
+    /*background-color: aqua; /*  Para ver el area del ancla a en boton*/
+}
+
+/* Etiqueta boton del menu pulldown*/
+.boton button
+{   align-self: center;
+    text-decoration: none;  
+    font-size:inherit; 
+    color: #000;
+    /* width: 100%; */
+    /* margin: auto; */
+}
+
+/* Caja div que contiene Imagen Home y Marca*/
+.home
+{
+    /* align-self: center;
+    text-align: center;*/
+    font-size: 1.5em; 
+    /* flex-shrink: 1; */
+    width: 260PX;
+
+ 
+    /* margin: auto; */
+    /*width: 100%; */
+    /* margin: 10px;*/
+    /* padding-top: 2px;  */
+}
+
+.boton img{
+    border-radius: 0%;
+    /* flex-grow: 1; */
+    width: 40px;
+    align-self: center;
+}
+
+/*Etiqueta A del link a home*/
+.home a span
+{   font-family: 'Parisienne', cursive;
+    text-decoration: none; 
+    width: 250px;
+}
+
+/*caja y boton del menu desplegable*/
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Contenido de la caja del menu con posición z>1 para estar por encima de la pagina. Normalmente oculo en posición absoluta debajo del la caja del boton con sombra*/
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+
+/* Style the links inside the dropdown */
+   .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+
+
+  .boton:hover, .boton button:hover, .boton a:hover
+  {   color: #FFF; 
+      background-color: #555;   
+  }
+  
+  
+  
+  .dropdown:hover,  .dropbtn 
+  {   color: #FFF; 
+      background-color: #555;   
+  }
+  
+  /* Muestra el menu desplegable */
+ .dropdown:hover .dropdown-content {
+    display: block;
+} 
+  
+  /* Agrega un fondo gris al marcar el nombre del catálogo. */
+  .dropdown-content a:hover 
+  {   background-color: #ddd;
+      color: black;
+  }
+ 
+
+/*----------------------------------------------------------------*/
+/*            AREA  izquierda   => Galería  => IMG                */
+/*----------------------------------------------------------------*/
+
+.izquierda
+{   margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    overflow-y: auto;
+    
+    
+    
+}
+
+.Logo-marca
+{   padding: 5px;
+    width: auto;
+    max-width: 200px;
+    border-radius: 10px;
+    background-color: #777;
+    flex-shrink: 1 ;
+   
+}
+.Logo-marca img
+{   border-radius: 0px;
+}
+
+.galeria
+{   display: flex;
+    flex-direction: column;
+    width: 90%;
+    overflow-y: auto;
+    margin-left: 10%;
+    align-items: center;
+
+    
+}
+
+.galeria img
+{   width: 60px;
+
+}
+
+
+
+/*----------------------------------------------------------------*/
+/*            AREA PRINCIPAL principal => detalleProducto => img  */
+/*----------------------------------------------------------------*/
+
+
+/* TODO:: Agrandar automaticamente la imagen principal cuando la resolusicón es muy alta */
+.principal
+{   display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #444; color solo para ver tamaño de la caja */
+
+}
+.detalleProducto
+{   /*background-color: rgb(222, 19, 19); /*color solo para ver tamaño de la caja */
+    /* display: flex;display: inline-flex;
+    flex-direction: row;*/
+    flex-grow: 1;
+    width:100%;
+    min-width: fit-content;
+    max-height:100%;  
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.detalleProducto img
+{   /*background-color: #222; color solo para ver tamaño de la caja/imagen */
+    /* flex-grow: 1; */
+    align-self: center;
+    width: 80vh;
+    height: 80vh;
+    max-height: fit-content;
+    max-width: fit-content;
+    min-width: fit-content;
+    min-height:fit-content;
+    /*
+    max-width: auto;
+     align-self: center;
+    text-justify: auto; */
+
+}
+
+/*----------------------------------------------------------------*/
+/* Definimos el contenedor grid                                   */
+/*----------------------------------------------------------------*/
+.container {
+    display: grid;
+
+    /* grid de tres 3x3  */
+    grid-template: 57px 1fr auto / 10% auto 30%; 
+
+    /* Distribucion por fila y columna*/
+    grid-template-areas: "encabezado encabezado encabezado" 
+                         "izquierda principal derecha" 
+                         "pie pie pie";
+
+    /* separacion entre los items */
+    gap: 1%;
+
+    /* La pagina va a ocupar casi todo el alto de la pantalla */
+    height: 95vh; 
+}
+
+
+/*----------------------------------------------------------------*/
+/* Se define el nombre y color de cada area del grid                 */
+/*----------------------------------------------------------------*/
+.encabezado { grid-area: encabezado; background-image: linear-gradient(grey, lightgrey);  }
+.izquierda  { grid-area: izquierda;  background-image: linear-gradient(grey, lightgrey); }
+.derecha    { grid-area: derecha;    background-image: linear-gradient(grey, lightgrey);  }
+.principal  { grid-area: principal;  background-image: linear-gradient(grey, lightgrey);}
+.pie        { grid-area: pie;        background-image: linear-gradient(grey, lightgrey);
+              color: black; font-weight: bold;}
+
+/*----------------------------------------------------------------*/
+/* Se define area izquierda8arriba con la galería                 */
+/*----------------------------------------------------------------*/
+  
+
+
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo tablet                      */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 1055px) {
+    .container {
+        /* Uso un atajo para definir 4 filas / 2 columna */
+        grid-template: 85px auto auto 60px / 30% auto; 
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas: "encabezado encabezado" "izquierda principal" "derecha derecha" "pie pie";
+    }
+}
+
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo celular                     */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 535px) 
+{
+    .container 
+    {
+        /* Uso un atajo para definir 6 filas / 1 columna */
+        /* grid-template: 135px 130px auto auto 60px / 100%;  */
+        grid-template-rows: 135px auto auto auto 60px ;
+        grid-template-columns: auto;
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas: "encabezado" "izquierda" "principal" "derecha" "pie";
+ 
+    }
+    .izquierda /*primer flex columna que separa marca de fotos de galería*/
+    {   display: flex;
+        flex-direction: column;
+        height: 130px;
+    }
+    .galeria /*segundo flex fila que muestra las fotos de galería*/
+    {   flex-direction: row;
+        overflow-y: auto;
+    }
+
+    .galeria img 
+    {   width:      100%;
+        object-fit: cover;
+        width: 50px;
+        margin-right: 5px;
+        display: block;
+    }
+    
+    .Logo-marca
+    {   width: 100px;
+        object-fit: cover;
+
+    } 
+}
+

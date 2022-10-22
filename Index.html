@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METADATA -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/logo sm red.ico">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/bd84408e24.js" crossorigin="anonymous"></script> 
+    <link rel="shortcut icon" href="img/android-icon-48x48.png" type="image/x-icon">
+
+
+    <!-- CSS & JS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>SoloLenceria.com</title>
+
+    
+    <!-- <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+     -->
+
+
+
+</head>
+
+<body >
+    <div class="container"> <!-- Contenedor grid -->
+        
+            <!-- Botonera del header con FLEX y FIXED POSITION dentro del Grid, use DIV por que no entendí como hacerlo con Listas :( -->
+            <div class="encabezado">
+              <div class="boton" > 
+                <div class="home">   
+                  <a href="#Inicio">
+                    <img src="img/Logo xl red.png" alt=""> <span> SoloLenceria</span>
+                  </a>
+                </div>
+              </div>
+              <div class="boton">
+                <a href="catalogo.html">Catalogo</a>
+              </div>
+              <div class="boton">
+                <a href="empresa.html">Empresa</a>
+              </div>  
+              <div class="boton">
+                <a href="contacto.html">Contacto</a>
+              </div>
+                                  <!-- <div class="home">SoloLenceria.com</div> -->
+            </div>
+       
+
+        <!-- Contenido de la seccion de la izquierda -->
+        <div class="item izquierda" id="izquierda">
+            <div class="Logo-marca">
+                
+            </div>            
+            <div class="galeria">
+                    
+            </div>
+       </div>
+
+
+        <!-- Contenido principal -->
+        <div class="item principal" id="principal">
+            <b>Contenido principal</b><br>
+            <div class="detalleProducto">
+                <img style="height: 150px;"  src="img/Logo xl red.png" id="imagenCentral" alt="Detalle">
+            </div>
+        </div>
+
+        <!-- Contenido del panel de la derecha -->
+        <div class="item derecha">
+            <b>Seccion de la derecha</b><br><br><br>
+            Referencia al producto
+        </div>
+
+        
+        <!-- Contenido del panel del footer -->
+        <div class="item pie">
+            <b>Grupo 3: Gustavo Morande - Esteban Medrano - Diego Waicman </b> 
+
+        </div>
+
+    </div>
+</body>
+
+</html>
