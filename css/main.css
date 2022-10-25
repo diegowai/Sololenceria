@@ -51,7 +51,7 @@ img {
 .boton 
  {  
     text-align: center;
-    min-width: 260px;
+    min-width: 200px;
     flex-grow: 1;
     font-size: 1.5em;
     /* background-color: red; Para ver el espacio del area boton */
@@ -228,22 +228,6 @@ img {
 }
 
 
-.detalleProducto
-{   /*background-color: rgb(222, 19, 19); /*color solo para ver tamaño de la caja */
-    flex-grow: 1;
-    width:100%;
-    min-width: fit-content;
-    max-height:100%;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.detalleProducto span
-{   display: none;
-
-}
-
 .pasoIzquierda
 {   display:flexbox;
     position: absolute;
@@ -312,6 +296,21 @@ img {
     font-weight: bolder;
    
 }
+.detalleProducto
+{   /*background-color: rgb(222, 19, 19); /*color solo para ver tamaño de la caja */
+    flex-grow: 1;
+    width:100%;
+    min-width: fit-content;
+    max-height:100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detalleProducto span
+{   display: none;
+
+}
 
 /*----------------------------------------------------------------*/
 /* Definimos el contenedor grid                                   */
@@ -334,7 +333,9 @@ img {
     height: 95vh; 
 }
 
-
+/*----------------------------------------------------------------*/
+/* Punto de Arranque tipo Wide Screen                             */
+/*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 /* Se define el nombre y color de cada area del grid                 */
 /*----------------------------------------------------------------*/
@@ -349,13 +350,10 @@ img {
 /* Se define area izquierda8arriba con la galería                 */
 /*----------------------------------------------------------------*/
   
-
-
-
 /*----------------------------------------------------------------*/
-/* Punto de corte para pantallas tipo tablet                      */
+/* Punto de corte para pantallas                                  */
 /*----------------------------------------------------------------*/
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1060px) {
     .container {
         /* Uso un atajo para definir 4 filas / 2 columna */
         grid-template: 85px auto auto 60px / 22% auto; 
@@ -367,15 +365,29 @@ img {
 
 
 /*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo tablet                      */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    .container {
+        /* Uso un atajo para definir 4 filas / 2 columna */
+        grid-template: 110px auto auto 60px / 22% auto; 
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas: "encabezado encabezado" "izquierda principal" "derecha derecha" "pie pie";
+    }
+}
+
+
+/*----------------------------------------------------------------*/
 /* Punto de corte para pantallas tipo celular                     */
 /*----------------------------------------------------------------*/
-@media only screen and (max-width: 535px) 
+@media only screen and (max-width: 400px) 
 {
     .container 
     {
         /* Uso un atajo para definir 6 filas / 1 columna */
         /* grid-template: 135px 130px auto auto 60px / 100%;  */
-        grid-template-rows: 135px auto auto auto 60px ;
+        grid-template-rows: 170px auto auto auto 60px ;
         grid-template-columns: auto;
 
         /* Distribuimos el contenido en cada fila */
