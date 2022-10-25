@@ -1,0 +1,118 @@
+{
+    "productos": [
+        {
+            "marca": "Andresa","foto": 2,"modelo": "L5477","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Rojo"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 4,"modelo": "L5589","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Sofía", "Azul", "Frutilla", "Rojo", "Vino"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 5,"modelo": "L5607","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Nude", "Sofía"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 6,"modelo": "L5508","talleMin": "85","talleMax": "100","colores": ["Blanco", "Crudo", "Negro", "Sofía", "Rojo"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 7,"modelo": "L5627","talleMin": "85","talleMax": "100","colores": ["Negro", "Rosa Perla", "Azul"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 8,"modelo": "L5651","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Rojo"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 9,"modelo": "L5655","talleMin": "90","talleMax": "105","colores": ["Negro", "Nude", "Azul", "Vino"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 10,"modelo": "L5659","talleMin": "85","talleMax": "100","colores": ["Blanco", "Crudo", "Negro", "Sofía", "Rosa Perla", "Rojo"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 11,"modelo": "L5666","talleMin": "85","talleMax": "105","colores": ["Blanco", "Negro", "Rosa Perla", "Nude"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 12,"modelo": "L5667","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Rosa Perla", "Aero"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 13,"modelo": "L5668","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 14,"modelo": "L5668","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 15,"modelo": "L5670","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Visión", "Azul", "Frutilla", "Rojo", "Vino", "Rosa Perla", "Nude", "Crudo"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 16,"modelo": "L5671","talleMin": "85","talleMax": "105","colores": ["Blanco", "Negro", "Visión"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 17,"modelo": "L5675","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 18,"modelo": "L5683","talleMin": "85","talleMax": "100","colores": ["Animal Print", "Reptil Print", "Camel Print", "Rosa", "Flor Rosa/Negro"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 19,"modelo": "L5683","talleMin": "85","talleMax": "100","colores": ["Animal Print Rosa"],"cantidad": 0
+        },
+        {
+            "marca": "Andresa","foto": 20,"modelo": "L5687","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Rubí", "Nude"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 3,"modelo": "2130","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Rojo", "Lemon", "Lila"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 4,"modelo": "2130","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Rojo", "Lemon", "Lila"],"cantidad": 0
+        },
+
+        {
+            "marca": "Brigitte","foto": 5,"modelo": "2130","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Rojo", "Lemon", "Lila", "Sofía", "Azul", "Frutilla", "Rojo", "Vino", "Rosa Perla", "Nude", "Crudo", "Visión"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 6,"modelo": "1000","talleMin": "85","talleMax": "105","colores": ["Blanco", "Negro", "Rojo", "Francia", "Rosé"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 7,"modelo": "1000","talleMin": "85","talleMax": "105","colores": ["Blanco", "Negro", "Rojo", "Francia", "Rosé"],"cantidad": 0
+        },
+
+        {
+            "marca": "Brigitte","foto": 8,"modelo": "1084","talleMin": "90","talleMax": "105","colores": ["Blanco", "Negro", "Flamingo", "Marino", "Lila"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 9,"modelo": "1084","talleMin": "90","talleMax": "105","colores": ["Blanco", "Negro", "Flamingo", "Marino", "Lila"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 10,"modelo": "2122","talleMin": "90","talleMax": "100","colores": ["Blanco", "Negro", "Fucsia"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 11,"modelo": "2122","talleMin": "90","talleMax": "100","colores": ["Blanco", "Negro", "Fucsia"],"cantidad": 0
+        },
+
+        {
+            "marca": "Brigitte","foto": 12,"modelo": "1108","talleMin": "90","talleMax": "100","colores": ["Blanco", "Negro", "Francia", "Pink", "Rosé", "Oliva"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 12,"modelo": "1108","talleMin": "90","talleMax": "100","colores": ["Blanco", "Negro", "Francia", "Pink", "Rosé", "Oliva"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 14,"modelo": "2144","talleMin": "S","talleMax": "L","colores": ["Blanco", "Negro"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 15,"modelo": "2144","talleMin": "S","talleMax": "L","colores": ["Blanco", "Negro"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 17,"modelo": "2140","talleMin": "85","talleMax": "105","colores": ["Blanco", "Negro", "Pink", "Oliva"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 16,"modelo": "2140","talleMin": "85","talleMax": "105","colores": ["Blanco", "Negro", "Pink", "Oliva"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 18,"modelo": "442","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Rojo", "Francia", "Menta"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 19,"modelo": "442","talleMin": "85","talleMax": "100","colores": ["Blanco", "Negro", "Rojo", "Francia", "Menta"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 20,"modelo": "1440","talleMin": "95","talleMax": "110","colores": ["Blanco", "Negro", "Rojo", "Rosé"],"cantidad": 0
+        },
+        {
+            "marca": "Brigitte","foto": 21,"modelo": "1440","talleMin": "95","talleMax": "110","colores": ["Blanco", "Negro", "Rojo", "Rosé"],"cantidad": 0
+        }
+    ]
+}
