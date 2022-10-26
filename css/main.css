@@ -333,6 +333,61 @@ img {
     height: 95vh; 
 }
 
+.movimiento {
+
+    animation-name: movertodo;
+    animation-duration: 3s;
+
+}
+
+@keyframes movertodo {
+    
+        0% {
+            transform: scale(1);        }
+
+        20% {
+            transform: scale(1.05);        }
+        
+        50% {
+            transform: scale(1.1);        }
+
+        80% {
+            transform: scale(1.15);        }
+ 
+        100% {
+            transform: scale(1);        }
+    
+
+}
+
+.movimiento-inverso {
+
+    animation-name: moverinverso;
+    animation-duration: 3s;
+
+}
+
+@keyframes moverinverso {
+    
+        0% {
+            transform: scale(1);        }
+
+        20% {
+            transform: scale(.5);        }
+        
+        50% {
+            transform: scale(.3);        }
+
+        80% {
+            transform: scale(.2);        }
+ 
+        100% {
+            transform: scale(1);        }
+    
+
+}
+
+
 /*----------------------------------------------------------------*/
 /* Punto de Arranque tipo Wide Screen                             */
 /*----------------------------------------------------------------*/
